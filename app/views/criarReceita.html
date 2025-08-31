@@ -1,10 +1,54 @@
-<div class="criar-receita">
-    <form action="#">
-        <input type="text" placeholder="Nome do projeto" required>
-        <input type="number" placeholder="Altura (cm)" required>
-        <input type="number" placeholder="Largura (cm)" required>
-        <input type="upload" accept="image/*" placeholder="Imagem de referência" required>
-        <input type="number" placeholder="Amostra Altura (cm)" required>
-        <input type="number" placeholder="Amostra Largura (cm)" required>
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochê Inteligente</title>
+    <link rel="stylesheet" href="/app/asset/style/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/app/asset/imagem/c.png" alt="Logo Crochê Inteligente">
+        <nav class="menu">
+            <a href="#">Receita personalizada</a>
+            <a href="#">Inspirações</a>
+            <a href="#">Biblioteca de pontos</a>
+            <a href="#">Calculadora de materiais</a>
+        </nav>
+        <div class="perfil">
+            <!-- <img src="" alt=""> -->
+            <span>Usuário</span>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="criar-receita">
+            <h1>Criar nova receita de crochê</h1>
+            <form action="#">
+                <div class="inputs">
+                    <div class="esquerda">
+                        <input type="text" placeholder="Nome do projeto" name="nome" required>
+                        <input type="number" placeholder="Altura (cm)" name="altura" required>
+                        <input type="number" placeholder="Largura (cm)" name="largura" required>
+                        <input type="upload" accept="image/*" placeholder="Imagem de referência" name="imagem" >
+                    </div>
+                    <div class="direita">
+                        <div class="info-amostra">
+                            <p>Você pode colocar uma amostra 10 x 10 <br>para uma receita mais exata</p>
+                        </div>
+                        <input type="number" placeholder="Amostra Altura (cm)" name="alturaAmostra">
+                        <input type="number" placeholder="Amostra Largura (cm)" name="larguraAmostra">
+                    </div>
+                </div>
+                <button type="submit">
+                    <a href="./visualizarReceita.html">Gerar receita</a>
+                </button>
+            </form>
+        </div>
+    </main>
+    <script src="/app/asset/script/main.js"></script>
+</body>
+</html>
