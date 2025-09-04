@@ -11,9 +11,12 @@
 </head>
 <body>
     <header>
+        <a href="/app/views/index.html">
+            <img src="/app/asset/imagem/c.png" alt="Logo Crochê Inteligente">
+        </a>
         <nav class="menu">
             <a href="/app/views/criarReceita.html">Receita personalizada</a>
-            <a href="/app/views/inspiracao.html">Inspirações</a>
+            <a href="#" class="ativo">Inspirações</a>
             <a href="/app/views/bibliotecaPontos.html">Biblioteca de pontos</a>
             <a href="#">Calculadora de materiais</a>
         </nav>
@@ -24,18 +27,14 @@
     </header>
 
     <main class="conteudo">
-        <div class="home">
-            <div class="logo">
-                <img src="/app/asset/imagem/c.png" alt="Logo Crochê Inteligente">
+        <div class="inspiracao">
+            <div class="filtro">
+                <div class="pecas">Peças </div>
+                <div class="cor">Cor</div>
             </div>
-            <div>
-                <h1>rochê Inteligente</h1>
-                <div class="descricao">
-                    <p>Bem-vindo ao Crochê Inteligente! Aqui você pode criar peças de crochê personalizadas com a ajuda da inteligência artificial.</p>
-                    <a href="/app/views/criarReceita.html" id="abrirReceita">Criar nova peça de crochê</a>
-                </div>
-            </div>
+            <div class="inspiracaoFotos"></div>
         </div>
     </main>
+    <script src="/app/asset/script/main.js"></script>
 </body>
 </html>
